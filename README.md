@@ -17,8 +17,13 @@ Before running the scripts, ensure you have the following:
 - Boto3 library installed. You can install it using pip:
   ```bash
   pip install boto3
-
+## Technologies Used
+AWS Services: EC2, ALB, ASG, SNS
+Programming Language: Python
+Library: Boto3 for AWS SDK
+Infrastructure as Code: Automated deployment through scripting
 AWS CLI configured with appropriate credentials and default region.
+
 ## Features
 S3 Bucket for Static Files
 -Create an S3 bucket to store your web application's static assets.
@@ -93,10 +98,10 @@ Tear down all resources when the application is no longer needed.
 
 Some Script Parameters commonly used during the scripting:
 
-AMI ID: Ensure you use the correct AMI ID for your region.
-VPC ID: Provide the correct VPC ID for your setup.
-Subnets: Update with your available subnet IDs.
-Key Pair: Replace with your existing EC2 key pair name.
+AMI ID: Ensure you use the correct AMI ID for region.
+VPC ID: Provide the correct VPC ID for setup.
+Subnets: Update with available subnet IDs.
+Key Pair: Replace with  existing EC2 key pair name.
 Security Group: Use the correct security group ID.
 Run the Main Deployment Script:
 Monitor the Deployment: The script will output the status of each component as it is created.
@@ -104,12 +109,8 @@ Monitor the Deployment: The script will output the status of each component as i
 ## Verify the Results
 After running the script, verify the deployment by:
 
-Checking the EC2 Instances: Ensure they are in a running state and accessible.
-Accessing the Load Balancer DNS: Use the provided DNS name to confirm that the web application is serving content correctly.
-Reviewing the SNS Notifications: Confirm that you receive alerts for any scaling events or health issues.
-Technologies Used
-AWS Services: EC2, ALB, ASG, SNS
-Programming Language: Python
-Library: Boto3 for AWS SDK
-Infrastructure as Code: Automated deployment through scripting
+Checking the EC2 Instances: Ensured they are in a running state and accessible.
+Accessing the Load Balancer DNS: Used the provided DNS name to confirm that the web application is serving content correctly.
+Reviewing the SNS Notifications: Confirmed that I receive alerts for any scaling events or health issues.
+
 
